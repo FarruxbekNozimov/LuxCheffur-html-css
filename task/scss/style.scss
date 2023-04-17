@@ -1,0 +1,383 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-size: "Lora" sans-serif;
+}
+
+body {
+	overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+	width: 7px;
+}
+::-webkit-scrollbar-thumb {
+	background: rgba(35, 34, 34, 0.96);
+	border-radius: 50px;
+}
+
+.container {
+	padding: 0 50px;
+	height: 100%;
+	width: 100%;
+}
+
+.header {
+	width: 100%;
+	height: 70px;
+	padding: 15px 30px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+		rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.nav {
+	height: 80px;
+	width: 50%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	font-size: "Noto Sans" sans-serif;
+}
+
+.logo {
+	font-size: 25px;
+	text-decoration: none;
+	color: #a55c30;
+	font-weight: bold;
+}
+
+.logo span {
+	font-weight: 100;
+	font-style: italic;
+}
+
+.nav .nav-item {
+	list-style: none;
+	text-transform: capitalize;
+	transition: 0.3s;
+	cursor: pointer;
+	font-size: 18px;
+	color: #232730;
+}
+
+.nav .nav-item:hover {
+	color: #a55c30;
+}
+
+.main {
+	width: 100%;
+	min-height: calc(100vh - 70px);
+	display: block;
+	gap: 10px;
+	padding: 30px;
+}
+
+.box {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	position: relative;
+	height: 700px;
+}
+
+.box-first {
+	width: 35%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.box-first h2 {
+	border-left: 10px solid #f8d7a4;
+	padding: 0 40px;
+	font-size: 64px;
+	color: #232730;
+}
+
+.box-second .car-img {
+	right: -10px;
+	position: absolute;
+	z-index: 1;
+}
+
+.box-second .vektor-img {
+	right: -50px;
+	z-index: -1;
+	height: 700px;
+	position: absolute;
+}
+
+.box.bottom {
+	margin-top: 50px;
+	height: 500px;
+	display: flex;
+}
+
+.box.bottom .box-first,
+.box.bottom .box-second {
+	width: 50%;
+}
+
+.img {
+	height: 100%;
+}
+.box-second {
+	display: flex;
+	justify-self: center;
+	align-items: center;
+}
+
+.box-text {
+	width: 80%;
+	margin: 0 auto;
+}
+
+.box-text h3 {
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 51px;
+	color: #a55c30;
+	margin-bottom: 40px;
+}
+
+.box-text p {
+	margin-bottom: 40px;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 145%;
+}
+
+.section-title {
+	padding: 30px;
+	text-align: center;
+	font-weight: 700;
+	font-size: 48px;
+	line-height: 61px;
+	color: #a55c30;
+	margin-bottom: 30px;
+}
+
+.service {
+	height: 90vh;
+	background-image: url("./img/service-car.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.service-all {
+	display: flex;
+	justify-content: space-around;
+	margin-bottom: 40px;
+}
+
+.service-part {
+	text-align: center;
+	color: #fff;
+	width: 300px;
+}
+
+.service-part-img {
+	margin-bottom: 30px;
+}
+
+.service-part-text {
+	text-align: start;
+}
+
+.service-part-text h4 {
+	margin-bottom: 30px;
+}
+
+.service-part-text p {
+	margin-bottom: 30px;
+}
+
+.fleet {
+	height: 90vh;
+}
+
+.fleet-cards {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.fleet-card {
+	font-family: "Nunito Sans";
+	font-style: normal;
+	width: 370px;
+	box-shadow: 10px 10px 30px 5px #0000002a;
+	padding: 20px;
+	text-align: center;
+}
+
+.fleet-card-title {
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 33px;
+	color: #a55c30;
+	text-transform: uppercase;
+}
+
+.fleet-card-desc {
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 16px;
+	color: rgba(35, 34, 34, 0.96);
+	margin-bottom: 10px;
+}
+
+.fleet-card-text {
+	width: 100%;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 150%;
+	color: rgba(35, 34, 34, 0.96);
+}
+
+.fleet-card-img {
+	width: 300px;
+	height: 160px;
+}
+
+.fleet-card-footer {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 19px;
+	color: rgba(35, 34, 34, 0.96);
+	margin-top: 30px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.fleet-card-footer-item {
+	display: flex;
+	justify-content: space-between;
+	gap: 20px;
+}
+
+.number {
+	padding: 40px;
+	background: rgba(35, 34, 34, 0.96);
+	background-blend-mode: multiply;
+	font-family: "Noto Sans";
+	font-style: normal;
+	color: #ffffff;
+}
+
+.all-nums {
+	display: flex;
+	justify-content: space-around;
+}
+
+.num {
+	font-weight: 600;
+	font-size: 72px;
+	line-height: 98px;
+}
+
+.num-text {
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 33px;
+}
+
+.testimonial {
+	background: #f8d7a4;
+	height: 90vh;
+}
+
+.testimonial-card {
+	width: 80%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	text-align: center;
+	align-items: center;
+	background: #fff;
+	padding: 40px 60px;
+	box-shadow: 5px 15px 33px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-right {
+	text-align: center;
+	font-family: "Nunito Sans";
+	font-style: normal;
+	font-weight: 700;
+	font-size: 32px;
+	line-height: 150%;
+	color: #272727;
+}
+.testimonial-left {
+	text-align: center;
+	width: 60%;
+	margin: 0 auto;
+}
+
+.testimonial-title {
+	font-family: "Nunito Sans";
+	font-style: italic;
+	font-weight: 300;
+	font-size: 24px;
+	line-height: 150%;
+	text-align: center;
+	color: #979797;
+}
+
+.testimonial-text {
+	font-family: "Nunito Sans";
+	font-style: italic;
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 150%;
+	text-align: center;
+	color: #272727;
+}
+
+.call {
+	font-family: "Noto Sans";
+	font-style: normal;
+	height: 40vh;
+	background-image: url("./img/service-car.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.little-call {
+	font-weight: 400;
+	font-size: 32px;
+	line-height: 44px;
+	color: #ffffff;
+}
+
+.big-call {
+	font-weight: 600;
+	font-size: 56px;
+	line-height: 76px;
+	color: #ffffff;
+}
+
+.contact {
+	background: #e5e5e5;
+}
+
+.menu-burger {
+	display: none;
+}
+
+@media only screen and (max-width: 480px) {
+}
