@@ -1,0 +1,80 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+/* .wrapper {
+	border: 3px solid crimson;
+	position: relative;
+	height: 100vh;
+}
+
+.box-item {
+	width: 200px;
+	height: 200px;
+	border: 1px solid black;
+	background: chocolate;
+	position: absolute;
+}
+
+.box-item:nth-child(1) {
+	top: 10px;
+	left: 10px;
+	background: lime;
+}
+
+.box-item:nth-child(2) {
+	background: yellow;
+	right: 0;
+} */
+
+.title {
+	background: orangered;
+	padding: 15px 20px;
+	margin: 15px;
+	border-radius: 50px;
+	color: #fff;
+}
+
+section {
+	margin: 20px 0;
+}
+
+.card-wrapper {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.card {
+	width: 300px;
+	box-shadow: 0 0 10px #000;
+	font-family: sans-serif;
+	/* transform: rotate(3deg); */
+	transform: scale(1);
+	transition: 0.5s;
+}
+
+.card:hover {
+	transform: rotate(0deg);
+}
+
+.card-body {
+	padding: 10px;
+}
+
+.card-img {
+	width: 100%;
+	height: 270px;
+	object-fit: cover;
+}
+
+.about {
+	height: 100vh;
+	width: 100%;
+	background-image: url("https://picsum.photos/id/124/1320/1270");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
